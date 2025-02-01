@@ -4,7 +4,7 @@ const products = [
     name: "RL Script 1 week",
     price: 5,
     description: "1 week access to our premium RL Script",
-    stock: 7
+    stock: 6
   },
   {
     id: 2,
