@@ -29,6 +29,7 @@
           <div class="product-info">
             <h3>RL Script 1 week</h3>
             <p>1 week access to our premium RL Script</p>
+            <div class="stock-display"></div>
             <ul class="features-list">
               <li>Instant Activation</li>
               <li>24/7 Support</li>
@@ -49,11 +50,11 @@
           <div class="product-info">
             <h3>RL Script 1 month</h3>
             <p>1 month access to our premium RL Script</p>
+            <div class="stock-display"></div>
             <ul class="features-list">
               <li>Instant Activation</li>
               <li>24/7 Support</li>
               <li>Regular Updates</li>
-              <li>Priority Support</li>
             </ul>
             <div class="price-container">
               <div class="price">$10</div>
@@ -73,11 +74,30 @@
         <h2 id="modalTitle"></h2>
         <p id="modalPrice"></p>
       </div>
+      
+      <div class="crypto-tabs">
+        <button class="crypto-tab" data-crypto="bitcoin">
+          <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.svg" alt="Bitcoin" class="crypto-icon">
+          <span class="crypto-name">Bitcoin</span>
+        </button>
+        <button class="crypto-tab" data-crypto="ethereum">
+          <img src="https://cryptologos.cc/logos/ethereum-eth-logo.svg" alt="Ethereum" class="crypto-icon">
+          <span class="crypto-name">Ethereum</span>
+        </button>
+        <button class="crypto-tab" data-crypto="litecoin">
+          <img src="https://cryptologos.cc/logos/litecoin-ltc-logo.svg" alt="Litecoin" class="crypto-icon">
+          <span class="crypto-name">Litecoin</span>
+        </button>
+      </div>
+      
       <div class="wallet-info">
-        <div class="wallet-label">Send payment in LTC to:</div>
-        <div class="wallet-address">M8htS1eWNxkyc7LbwbSiSMApFbqLdujo9u</div>
+        <div class="wallet-label">Send payment to:</div>
+        <div class="wallet-address" data-crypto="bitcoin">34QLonCdDdLv7nQPKjbe8NbhuxzFWCpy9Z</div>
+        <div class="wallet-address" data-crypto="ethereum">0x5593F96ACa65Cc0Dc2eD6374467E2704E70aB51d</div>
+        <div class="wallet-address" data-crypto="litecoin">M8htS1eWNxkyc7LbwbSiSMApFbqLdujo9u</div>
         <button class="copy-button">Copy Address</button>
       </div>
+      
       <div class="modal-footer">
         <p class="proof-text">After payment, send the proof to the <span class="highlight">excomungado</span> discord</p>
     </div>
